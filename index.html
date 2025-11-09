@@ -16,7 +16,10 @@
     <!-- f. Div konteineris: ši žymė naudojama elementų grupavimui į bendrą sritį, kad būtų galima juos kartu stilizuoti ar tvarkyti -->
     <div>
         <!-- b. Pastraipa -->
-        <p>Mano mėgstamiausias filmas - "10 Things I hate about you"</p>
+        <p><u>Mano mėgstamiausias filmas - "10 Things I hate about you"</u></p>
+<!-- Komentaras: <u> pabraukia tekstą, tačiau tai gali būti klaidinantis formatavimas,
+     nes pabrauktas tekstas dažnai atrodo kaip nuoroda. Geriau naudoti CSS (pvz., text-decoration). -->
+
         
         <!-- c. Nuoroda -->
         <a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a>
@@ -26,18 +29,24 @@
 
     <!-- e. Sąrašai -->
     <h3>Dominančios IT ar elektronikos sritys:</h3>
-    <ol>
-        <li>Dirbtinis intelektas</li>
-        <li>Kibernetinis saugumas</li>
-        <li>Žaidimų kūrimas</li>
-    </ol>
+<ol>
+    <li><strong>Dirbtinis intelektas</strong></li> <!-- <strong> semantiškai pabrėžia svarbą -->
+    <li><b>Kibernetinis saugumas</b></li> <!-- <b> tik vizualiai paryškina -->
+    <li>Žaidimų kūrimas</li>
+</ol>
+<!-- Komentaras: <strong> naudojama semantinei reikšmei suteikti (pabrėžti svarbą),
+     o <b> žymė – tik stiliaus tikslais, be semantinės reikšmės. -->
+
 
     <h3>Įgūdžiai ir technologijos, kurias norėčiau išmokti:</h3>
-    <ul>
-        <li>Kuo daugiau programavimo kalbų</li>
-        <li>Sukurti žaidimus ar svetaines</li>
-        <li>Duomenų analizė</li>
-    </ul>
+<ul>
+    <li><em>Kuo daugiau programavimo kalbų</em></li> <!-- <em> semantiškai pabrėžia -->
+    <li><i>Sukurti žaidimus ar svetaines</i></li> <!-- <i> tik vizualiai pasvyrina -->
+    <li>Duomenų analizė</li>
+</ul>
+<!-- Komentaras: <em> nurodo akcentą ar intonaciją semantiškai, 
+     o <i> tiesiog pakeičia šriftą į pasvirą, be semantinės reikšmės. -->
+
 
 </body>
 </html>
