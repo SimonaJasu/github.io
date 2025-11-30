@@ -1129,6 +1129,48 @@
       </div>
 
     </section><!-- /Contact Section -->
+    <!-- PRIDĖK ŠĮ BLOKĄ PO KONTAKTŲ FORMOS -->
+<section id="memory-game" class="memory-section">
+  <h2>Mano Žaidimas</h2>
+
+  <div class="game-controls">
+    <label for="difficulty">Sudėtingumas:</label>
+    <select id="difficulty">
+      <option value="easy">Easy (6 porų)</option>
+      <option value="hard">Hard (12 porų)</option>
+    </select>
+
+
+    <button id="startBtn" class="btn">Start</button>
+    <button id="resetBtn" class="btn secondary">Atnaujinti</button>
+  </div>
+  <div>
+    Laikas: <span id="timer">0</span> sek.
+</div>
+
+
+  <div class="game-stats">
+    <div><strong>Ėjimų skaičius:</strong> <span id="moves">0</span></div>
+    <div><strong>Sutapusių porų:</strong> <span id="matches">0</span></div>
+    
+  </div>
+
+  <div id="board" class="board" aria-live="polite">
+    <!-- kortelės bus sugeneruotos čia -->
+  </div>
+
+  <div id="winMessage" class="win-message" hidden>
+    <h3>Sveikinu — laimėjai!</h3>
+    <p>Ėjimai: <span id="winMoves"></span></p>
+    <div class="bestScores">
+    <p>Geriausias Easy: <span id="bestEasy"></span></p>
+    <p>Geriausias Hard: <span id="bestHard"></span></p>
+</div>
+
+<div id="winMessage" hidden></div>
+
+</section>
+
 
   </main>
 
@@ -1172,6 +1214,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
 
 </body>
 
